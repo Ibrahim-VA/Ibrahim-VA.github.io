@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Mohammad Ibrahim] | Virtual Assistant</title>
+<meta name="description" content="[Mohammad Ibrahim] is a reliable virtual assistant helping founders and small businesses with email, scheduling, data entry, research and customer support.">
+<style>
+:root{
+  --bg:#ffffff; --bg-alt:#f5f7fb; --text:#16213a; --muted:#5b6784;
+  --brand:#2457f5; --brand-dark:#1a41c2; --card:#ffffff; --border:#e3e8f2;
+  --shadow:0 8px 30px rgba(22,33,58,.07);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0e1424; --bg-alt:#131b30; --text:#eaf0ff; --muted:#a0abc8;
+    --brand:#6e93ff; --brand-dark:#8aa8ff; --card:#18213a; --border:#25304f;
+    --shadow:0 8px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+.alt{background:var(--bg-alt)}
+h1,h2,h3{line-height:1.2;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:12px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:40px}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:12px}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.1rem;color:var(--text)}
+.logo span{color:var(--brand)}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--muted);font-weight:500;font-size:.95rem}
+.links a:hover{color:var(--brand)}
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:600;border:2px solid var(--brand);transition:.2s}
+.btn.primary{background:var(--brand);color:#fff}
+.btn.primary:hover{background:var(--brand-dark);border-color:var(--brand-dark)}
+.btn.ghost{color:var(--brand)}
+.btn.ghost:hover{background:var(--brand);color:#fff}
+.nav-cta{padding:9px 18px;font-size:.9rem}
+
+/* hero */
+.hero{padding:90px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero p{color:var(--muted);font-size:1.12rem;max-width:560px;margin-bottom:30px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.photo{width:100%;max-width:320px;aspect-ratio:1;border-radius:28px;margin-left:auto;background:linear-gradient(135deg,var(--brand),#7aa2ff);display:grid;place-items:center;color:#fff;font-size:4.5rem;font-weight:800;box-shadow:var(--shadow);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.stats{display:flex;gap:36px;margin-top:40px;flex-wrap:wrap}
+.stat b{display:block;font-size:1.6rem}
+.stat span{color:var(--muted);font-size:.9rem}
+
+/* cards */
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;box-shadow:var(--shadow)}
+.card .ico{font-size:1.8rem;margin-bottom:12px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p,.card li{color:var(--muted);font-size:.97rem}
+.card ul{padding-left:18px;margin-top:8px}
+.tag{display:inline-block;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand);margin:10px 6px 0 0}
+
+/* tools */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:9px 18px;border-radius:99px;border:1px solid var(--border);background:var(--card);font-weight:500;font-size:.93rem}
+
+/* process */
+.step{position:relative;padding-top:6px}
+.num{width:42px;height:42px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700;margin-bottom:14px}
+
+/* contact */
+.contact{text-align:center}
+.contact .sub{margin-left:auto;margin-right:auto}
+.contact .cta-row{justify-content:center}
+.contact-list{margin-top:34px;color:var(--muted)}
+.contact-list a{font-weight:600}
+
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.88rem;border-top:1px solid var(--border)}
+
+@media(max-width:800px){
+  .hero-grid{grid-template-columns:1fr}
+  .photo{margin:0 auto;order:-1;max-width:220px}
+  .links a:not(.nav-cta){display:none}
+  section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">[Mohammad Ibrahim]<span>.</span></a>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#work">Sample Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary nav-cta" href="#contact">Hire Me</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Virtual Assistant</span>
+      <h1>Get your time back. I'll handle the <em>admin work</em>.</h1>
+      <p>I help founders, coaches, agencies and small business owners stay organised with email management, scheduling, data entry, research and customer support, so you can focus on growing your business.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Let's Work Together</a>
+        <a class="btn ghost" href="#services">See Services</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>[X]+</b><span>Tasks completed</span></div>
+        <div class="stat"><b>&lt; [X] hrs</b><span>Reply time</span></div>
+        <div class="stat"><b>[Time zone]</b><span>Flexible overlap</span></div>
+      </div>
+    </div>
+    <div class="photo">
+      <!-- Replace with: <img src="photo.jpg" alt="[Mohammad Ibrahim]"> -->
+      [YN]
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">What I do</span>
+    <h2>Services built around your workload</h2>
+    <p class="sub">Pick one service or combine several. I adapt to your tools and your way of working.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ico">📧</div><h3>Email &amp; Inbox Management</h3><p>Filtering, labelling, replying to routine messages and flagging what truly needs your attention.</p></div>
+      <div class="card"><div class="ico">📅</div><h3>Calendar &amp; Scheduling</h3><p>Booking meetings, handling time zones, reminders and keeping your calendar conflict-free.</p></div>
+      <div class="card"><div class="ico">📊</div><h3>Data Entry &amp; Spreadsheets</h3><p>Accurate data entry, cleanup, formatting and organised Excel or Google Sheets files.</p></div>
+      <div class="card"><div class="ico">🔍</div><h3>Web Research &amp; Lead Lists</h3><p>Market research, competitor lists and verified lead lists ready for your outreach.</p></div>
+      <div class="card"><div class="ico">💬</div><h3>Customer Support</h3><p>Friendly, professional replies via email and live chat that keep your customers happy.</p></div>
+      <div class="card"><div class="ico">🗂️</div><h3>CRM &amp; Project Support</h3><p>Keeping HubSpot, Notion, Trello or Asana updated so nothing slips through the cracks.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow">Sample work</span>
+    <h2>A look at how I work</h2>
+    <p class="sub">These are sample projects created with dummy data to show my approach and quality. Replace the links with your own files.</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Spreadsheet Cleanup</h3>
+        <p>Messy contact list turned into a clean, de-duplicated and properly formatted sheet.</p>
+        <span class="tag">Excel</span><span class="tag">Google Sheets</span>
+        <p style="margin-top:14px"><a href="#">View before &amp; after →</a></p>
+      </div>
+      <div class="card">
+        <h3>Lead List Template</h3>
+        <p>Structured lead research sheet with company, role, email, LinkedIn and notes columns.</p>
+        <span class="tag">Research</span><span class="tag">Lead Gen</span>
+        <p style="margin-top:14px"><a href="#">View sample →</a></p>
+      </div>
+      <div class="card">
+        <h3>Email Reply Templates</h3>
+        <p>Ready-to-use templates for inquiries, follow-ups, scheduling and customer complaints.</p>
+        <span class="tag">Email</span><span class="tag">Support</span>
+        <p style="margin-top:14px"><a href="#">View templates →</a></p>
+      </div>
+      <div class="card">
+        <h3>Travel Itinerary</h3>
+        <p>A detailed day-by-day itinerary with flights, hotels, timings and booking links in one document.</p>
+        <span class="tag">Planning</span><span class="tag">Docs</span>
+        <p style="margin-top:14px"><a href="#">View itinerary →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Toolkit</span>
+    <h2>Tools I work with</h2>
+    <p class="sub">Add only the tools you are genuinely comfortable using.</p>
+    <div class="chips">
+      <span class="chip">Google Workspace</span><span class="chip">Microsoft Office</span><span class="chip">Slack</span>
+      <span class="chip">Zoom</span><span class="chip">Calendly</span><span class="chip">Trello</span>
+      <span class="chip">Asana</span><span class="chip">Notion</span><span class="chip">Canva</span>
+      <span class="chip">HubSpot</span><span class="chip">Zapier</span><span class="chip">[Add yours]</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2>Simple, clear and stress-free</h2>
+    <p class="sub">No confusion, no chasing. Here is what working together looks like.</p>
+    <div class="grid g3">
+      <div class="step"><div class="num">1</div><h3>Discovery</h3><p style="color:var(--muted)">Tell me about your tasks and goals. I'll reply with how I can help and a clear plan.</p></div>
+      <div class="step"><div class="num">2</div><h3>Onboarding</h3><p style="color:var(--muted)">We set up tools, access, communication channels and priorities.</p></div>
+      <div class="step"><div class="num">3</div><h3>Delivery</h3><p style="color:var(--muted)">I handle the work and send regular updates, so you always know where things stand.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Why me</span>
+    <h2>What you can expect</h2>
+    <div class="grid g3" style="margin-top:30px">
+      <div class="card"><h3>⚡ Fast Communication</h3><p>Quick replies and proactive updates, so you are never left guessing.</p></div>
+      <div class="card"><h3>🎯 Attention to Detail</h3><p>I double-check my work before delivery to keep errors out.</p></div>
+      <div class="card"><h3>🔒 Confidentiality</h3><p>Your business information stays private and handled with care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <span class="eyebrow">Get in touch</span>
+    <h2>Ready to lighten your workload?</h2>
+    <p class="sub">Send me a short description of your project and I'll reply with how I can help.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:expibrahimdm@gmail.com">Email Me</a>
+      <a class="btn ghost" href="https://www.upwork.com/freelancers/~01d48f26e7df6ea84c~01d48f26e7df6ea84c~01d48f26e7df6ea84c" target="_blank" rel="noopener">Hire on Upwork</a>
+    </div>
+    <p class="contact-list">
+      <a href="mailto:expibrahimdm@gmail.com">expibrahimdm@gmail.com</a> &nbsp;•&nbsp;
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a> &nbsp;•&nbsp;
+      WhatsApp: +8801626505121
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> [Mohammad Ibrahim]. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
